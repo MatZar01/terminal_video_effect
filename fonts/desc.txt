@@ -1,0 +1,1 @@
+In this directory you'll find font .tff files (included are ubuntu font family). You can use any tff font for your vid to char video.
