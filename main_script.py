@@ -96,6 +96,8 @@ def parse_arguments():
                         type=str, nargs='?', const='', default='')
     parser.add_argument('--output', help="Choose file save destination",
                         type=str, nargs='?', const='', default='')
+    parser.add_argument('--size', help="Choose output file dot size",
+                        type=int, nargs='?', const=10, default=10)
     parser.add_argument('--invert', help="Set True to invert the output colors",
                         type=str, nargs='?', const='False', default='False')
     parser.add_argument('--chars', help='Set True to output characterized image',
@@ -127,7 +129,7 @@ def open_stream(path):
     return vid, fps, [width, height]
 
 def create_output(path, fps, shape):
-    return cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*"MJPG"), fps, shape)
+    return cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*'H264'), fps, shape)
 
 def multiply_channels(frame):
     return np.dstack([frame, frame, frame])
@@ -142,7 +144,7 @@ if __name__ == '__main__':
     save_vid = False
     if args.output != '': save_vid = True
 
-    SIZE = 10
+    SIZE = args.size
 
     vid, fps, shape = open_stream(args.video)
 
