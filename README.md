@@ -32,7 +32,7 @@ So not that much.
 
 ## Using TVE
 
-TVE runs from command line. Simply run `./main_script.py -h` for help. I'll walk you through the options available.
+TVE runs from command line. Simply run `python3 ./main_script.py -h` for help. I'll walk you through the options available.
 
 * `-h --help` -- We've got this covered already.
 * `--video` -- you can pass path to the video you want to convert. Leaving this empty will result in trying to open your webcam, so you can see output live.
