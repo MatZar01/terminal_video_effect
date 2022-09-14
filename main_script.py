@@ -110,7 +110,6 @@ def parse_arguments():
     args.color = eval(args.color)
     args.invert = eval(args.invert)
     args.chars = eval(args.chars)
-    args.font = args.font
 
     return args
 
