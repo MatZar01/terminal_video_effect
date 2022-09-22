@@ -37,9 +37,9 @@ TVE runs from command line. Simply run `python3 ./main_script.py -h` for help. I
 * `-h --help` - We've got this covered already.
 * `--video` - you can pass path to the video you want to convert. Leaving this empty will result in trying to open your webcam, so you can see output live.
 * `--output` - if you want to save output file with effect you've chosen, pass path to it's new location. You'll want to use `.mp4` file format.
-* `--size` - passing an `int` number will allow you to change how output video looks like -- meaning the size of each dot or area covered by single character. The default size is 10 (looks fine in most videos, depends on resolution).
+* `--size` - passing an `int` number will allow you to change how output video looks like - meaning the size of each dot or area covered by single character. The default size is 10 (looks fine in most videos, depends on resolution).
 * `--invert` - if set to `True`, will invert colors in your video. Works best with binary output (setting `--color` to `False`).
-* `--chars` - if set to `True`, your output will be enturely made of characters. You will see both new window with wideo, as well as output in your terminal (don't panic, you may want to stretch it a bit).
+* `--chars` - if set to `True`, your output will be entirely made of characters. You will see both new window with wideo, as well as output in your terminal (don't panic, you may want to stretch it a bit).
 * `--font` - you can pass path to your desired font .ttf file, if you want to use specific font. Leaving this empty will result in default font.
 * `--color` - passing `False` will result in binary (black/white) output.
 
